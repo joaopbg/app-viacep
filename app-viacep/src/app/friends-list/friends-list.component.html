@@ -1,0 +1,40 @@
+<div *ngFor="let add of address">
+    <div class="friend-card">
+        <div class="inside avatar">
+            <p>Photo</p>
+        </div>
+        <div class="inside info">
+            <span>Addres Info</span>
+            <div>
+                <label>Street:</label>
+                {{add.logradouro}}
+            </div>
+            <div>
+                <label>Zip Code:</label>
+                {{add.cep}}
+            </div>
+            <div>
+                <label>Disctrict:</label>
+                {{add.bairro}}
+            </div>
+            <div>
+                <label>City:</label>
+                {{add.localidade}}
+            </div>
+            <div>
+                <label>UF:</label>
+                {{add.uf}}
+            </div>
+    
+        </div>
+    
+        <div class="inside name">
+            <p>Name</p>
+    
+        </div>
+    </div>
+
+</div>
+
+
+

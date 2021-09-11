@@ -1,7 +1,15 @@
+
 <div>
     <app-navbar></app-navbar>
 </div>
-<div>
-    <app-address-form></app-address-form>
+<div class="layout">
+    <div class="grid-element">
+        <app-address-form (buttonRegisterPressed)="addFriend($event)"></app-address-form>
+    </div>
+    
+    <div class="grid-element">
+            <app-friends-list [address]="address"></app-friends-list>
+    </div>
 </div>
+
 

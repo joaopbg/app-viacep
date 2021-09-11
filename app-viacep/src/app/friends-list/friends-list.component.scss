@@ -1,0 +1,34 @@
+.friend-card{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    
+    border-radius: 1px;
+    height: 15em;
+    width: 29em;
+}
+
+.inside {
+    height: auto;
+    width: auto;
+    border: 1px solid;
+}
+
+.avatar{
+    grid-row: span 7; 
+    
+
+}
+.name{
+    color: black;
+    
+
+}
+
+.info{
+    grid-row: span 8; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
