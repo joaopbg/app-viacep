@@ -1,0 +1,21 @@
+.mat-table{
+    width: 100%;
+    align-items: center;
+}
+
+
+.mat-header-cell, .mat-cell{
+    text-align: center;
+}
+
+.control-button{
+    color: #fff;   
+}
+.control-button:hover{
+    transition: 0.2s;
+    background-color: rgba(255, 255, 255, 0.295);    
+}
+
+.buttons-area{
+    padding: 2px;
+}

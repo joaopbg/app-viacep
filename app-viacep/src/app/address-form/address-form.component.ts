@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { CepServiceService } from '../services/cep-service.service';
 
+
 @Component({
   selector: 'app-address-form',
   templateUrl: './address-form.component.html',
@@ -21,7 +22,6 @@ public address = {
   ddd:"",
   numero:""
 }
-
 
 
   constructor(private cepService: CepServiceService) {}

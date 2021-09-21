@@ -1,12 +1,33 @@
 <div class="navbar">
     <div>
-        <a href="#" class="nav-link" id="logo">Address</a>
+        <a href="#" class="nav-link" id="logo">
+            <mat-icon>api</mat-icon> Address</a>
     </div>
     <div>
         <ul class="nav">
-            <li><a href="#" class="nav-link">HOME</a></li>
-            <li><a href="#" class="nav-link">ABOUT</a></li>
-            <li><input type="text" placeholder="SEARCH"></li>
+            <li><a href="#" class="nav-link">
+
+                <button mat-button>
+                    <mat-icon>home</mat-icon>HOME
+                </button>
+
+                </a>
+            </li>
+
+            <li><a href="#" class="nav-link">
+                <button mat-button>
+                    <mat-icon>info</mat-icon>ABOUT
+                </button>
+                </a>
+            </li>
+            
+            <li><input matInput type="text" placeholder="SEARCH">
+                <a href>
+                    <button mat-button>
+                        <mat-icon>search</mat-icon>
+                    </button>
+                </a>
+            </li>
         </ul>
     </div>
     
