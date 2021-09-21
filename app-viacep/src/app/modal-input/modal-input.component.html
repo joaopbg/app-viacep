@@ -1,0 +1,60 @@
+
+<h1 mat-dialog-title>Register a Friend!</h1>    
+<div mat-dialog-content>
+    <form [formGroup]="form" class="form">
+        <div class="form-row">
+            <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="fName">
+            </mat-form-field>
+    
+            <mat-form-field appearance="fill">
+                <mat-label>Zip Code</mat-label>
+                <input matInput formControlName="fZip" (focusout)="autoFill()">
+            </mat-form-field>
+
+        </div>
+
+        <div class="form-row">
+            <mat-form-field appearance="fill">
+                <mat-label>Number</mat-label>
+                <input matInput formControlName="fHomeNumber" class="input-number">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Street</mat-label>
+                <input matInput formControlName="fStreet">
+            </mat-form-field>
+
+        </div>
+        
+        
+
+        <mat-form-field appearance="fill">
+            <mat-label>District</mat-label>
+            <input matInput formControlName="fDistrict">
+        </mat-form-field>
+
+        <div class="form-row">
+            <mat-form-field appearance="fill">
+                <mat-label>City</mat-label>
+                <input matInput formControlName="fCity">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>State</mat-label>
+                <input matInput formControlName="fState">
+            </mat-form-field>
+
+        </div>
+        
+    </form>
+
+  
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onCancel()" color="warn">Cancel</button>
+  <button mat-button (click)="onClick()" color="primary">Register</button>
+</div>
+

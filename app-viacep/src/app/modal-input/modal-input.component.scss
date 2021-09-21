@@ -1,0 +1,33 @@
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mat-dialog-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-row:last-child{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns:3fr 1fr;
+}
+
+.form-row:first-child{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns:3fr 1fr;
+}
+
+.form-row:nth-child(2){
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns:1fr 4fr;
+}

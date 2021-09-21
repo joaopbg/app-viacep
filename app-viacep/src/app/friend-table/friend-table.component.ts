@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalInputComponent } from '../modal-input/modal-input.component';
 
 export interface PeriodicElement {
   fName: string;
@@ -6,11 +8,23 @@ export interface PeriodicElement {
   fStreet: string;
   fDistrict: string;
   fCity: string;
-  edit:string;
+}
+export interface DialogData {
+  fName: string;
+  fZip: string;
+  fStreet: string;
+  fDistrict: string;
+  fCity: string;
 }
 
+
 const ELEMENT_DATA: PeriodicElement[] = [
-  {fName: 'Emerson', fZip: '12247780', fStreet: 'Heras',fDistrict:'Jardim das Flores', fCity: 'SJC',edit:''},
+  {
+  fName: 'Emerson',
+  fZip: '12200-000',
+  fStreet: 'longe bagarai',
+  fDistrict:'Parque do Bacanal',
+  fCity: 'Sanja City'},
 ];
 
 @Component({
@@ -23,13 +37,22 @@ export class FriendTableComponent implements OnInit {
   displayedColumns: string[] = ['fName', 'fZip', 'fStreet', 'fDistrict','fCity','edit'];
   dataSource = ELEMENT_DATA;
   
-  constructor() { }
+  constructor(
+    public dialog: MatDialog
+  ) { }
 
   ngOnInit(): void {
   }
+  public openDialog(): void {
+    const dialogRef = this.dialog.open(ModalInputComponent, {
+      width: '600px',
+      height: '490px',      
+    });
 
-  public testMethod(){
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
 
   }
-
 }
+

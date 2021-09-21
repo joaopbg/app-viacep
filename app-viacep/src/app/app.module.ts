@@ -23,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { FriendTableComponent } from './friend-table/friend-table.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalInputComponent } from './modal-input/modal-input.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     FriendsListComponent,
     FooterComponent,
     FriendTableComponent,
+    ModalInputComponent,
 
   ],
   imports: [
