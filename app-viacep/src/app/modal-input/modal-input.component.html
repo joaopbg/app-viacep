@@ -7,14 +7,11 @@
                 <mat-label>Name</mat-label>
                 <input matInput formControlName="fName">
             </mat-form-field>
-    
             <mat-form-field appearance="fill">
                 <mat-label>Zip Code</mat-label>
                 <input matInput formControlName="fZip" (focusout)="autoFill()">
             </mat-form-field>
-
         </div>
-
         <div class="form-row">
             <mat-form-field appearance="fill">
                 <mat-label>Number</mat-label>
@@ -25,16 +22,11 @@
                 <mat-label>Street</mat-label>
                 <input matInput formControlName="fStreet">
             </mat-form-field>
-
         </div>
-        
-        
-
         <mat-form-field appearance="fill">
             <mat-label>District</mat-label>
             <input matInput formControlName="fDistrict">
         </mat-form-field>
-
         <div class="form-row">
             <mat-form-field appearance="fill">
                 <mat-label>City</mat-label>
@@ -45,16 +37,12 @@
                 <mat-label>State</mat-label>
                 <input matInput formControlName="fState">
             </mat-form-field>
-
         </div>
-        
     </form>
-
-  
 </div>
 
 <div mat-dialog-actions>
   <button mat-button (click)="onCancel()" color="warn">Cancel</button>
-  <button mat-button (click)="onClick()" color="primary">Register</button>
+  <button mat-button [mat-dialog-close]="data" (click)="addItem()" color="primary">Register</button>
 </div>
 
