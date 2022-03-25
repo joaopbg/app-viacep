@@ -96,8 +96,11 @@ export class FriendTableComponent implements OnInit {
   }
 
   public deleteElement(element : dataArray){
-    this.dataSource = this.dataSource.filter(newSource => { newSource.fName != element.fName})
+    debugger
+    this.dataSource = this.dataSource.filter(newSource => newSource.fName != element.fName)
+    debugger
     this.table.renderRows() 
+    debugger
   }
 }
 
